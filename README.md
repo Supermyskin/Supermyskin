@@ -16,5 +16,5 @@ Hobbyist Photographer 📷
 
 (Currently learning C++)
 ## 🛠 Skills
-[![My Skills](https://skillicons.dev/icons?i=python,arch,vscode,windows,cpp)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=python,arch,vscode,windows)](https://skillicons.dev)
 
