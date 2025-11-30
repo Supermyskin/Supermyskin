@@ -1,0 +1,97 @@
+body {
+    background: #1a1122;
+    font-family: "Verdana", sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #e0d1f0;
+}
+
+@font-face {
+    font-family: "Pixel";
+    src: local("Pixel"), local("VT323");
+}
+
+.window {
+    background: #c9b3e8;
+    border: 2px solid #e8e8e8;
+    border-right-color: #333333;
+    border-bottom-color: #333333;
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 0px 2px #101010;
+}
+
+.titlebar {
+    background: linear-gradient(to bottom, #4a1e9f, #2a0e5d);
+    color: white;
+    padding: 4px 8px;
+    font-weight: bold;
+    font-family: "Pixel", monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titlebar .controls {
+    display: flex;
+    gap: 4px;
+}
+
+.titlebar button {
+    width: 16px;
+    height: 16px;
+    border: none;
+    background: #bca3db;
+    border-top: 2px solid #f5f5f5;
+    border-left: 2px solid #f5f5f5;
+    border-right: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+    cursor: default;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, #a982d8, #ad89e4);
+    padding: 6px;
+    border-top: 2px solid #f5f5f5;
+    border-left: 2px solid #f5f5f5;
+    border-right: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+    font-family: "Pixel", monospace;
+}
+
+.navbar a {
+    color: #1f1229;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+.content {
+    padding: 10px;
+    background: #d4c4ea;
+    color: #150e1b;
+    font-family: "Verdana";
+    border-top: 2px solid #f5f5f5;
+    border-left: 2px solid #f5f5f5;
+    border-right: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+}
+
+.footer {
+    margin-top: 10px;
+    padding: 4px;
+    text-align: center;
+    font-size: 12px;
+    background: linear-gradient(to bottom, #ad89e4, #a982d8);
+    border-top: 2px solid #f5f5f5;
+    border-left: 2px solid #f5f5f5;
+    border-right: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+}
+
+.footer a {
+    color: #d4c4ea;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 12px;
+}
