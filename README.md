@@ -1,17 +1,10 @@
 
 ### Hey There!👋
 
-Hey! I'm Supermyskin.
+Hey! I'm Supermyskin (Damian).
 
 ## 🚀 About Me
-I'm a:
 
-Fullstack Developer 👨‍💻
+# Currently working on a personal website that will make this readme.md obsolete
 
-Student 📚
-
-Hobbyist Photographer and Skater 📷 🛹
-
-## 🛠 Skills
-[![My Skills](https://skillicons.dev/icons?i=python,js,c,cpp,neovim,arch,vscode)](https://skillicons.dev)
-
+🇧🇬
