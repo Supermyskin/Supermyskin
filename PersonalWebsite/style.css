@@ -1,187 +1,208 @@
 body {
-    background-image: url("images/checkboard.png");
-    background-repeat: repeat;
-    font-family: "Verdana", sans-serif;
-    margin: 0;
-    padding: 20px;
-    color: #e8e8e8;
+  background-image: url("images/checkboard.png");
+  background-repeat: repeat;
+  font-family: "Verdana", sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: #e8e8e8;
 }
 
 @font-face {
-    font-family: "Pixel";
-    src: local("Pixel"), local("VT323");
+  font-family: "Pixel";
+  src: local("Pixel"), local("VT323");
 }
 
 @font-face {
-    font-family: "Cubano", sans-serif;
-    src: src("fonts/cubano.ttf");
+  font-family: "Cubano", sans-serif;
+  src: src("fonts/cubano.ttf");
 }
 
 .bootline {
-    color: #e0d1f0;
-    font-weight: bold;
-    white-space: pre-wrap;
-    font-size: 14px;
+  color: #e0d1f0;
+  font-weight: bold;
+  white-space: pre-wrap;
+  font-size: 14px;
 }
 
 .boot_screen {
-    position: fixed;
-    inset: 0;
-    padding: 20px;
-    background-image: url("images/checkboard.png");
+  position: fixed;
+  inset: 0;
+  padding: 20px;
+  background-image: url("images/checkboard.png");
 }
 
 .window {
-    background: #c9b3e8;
-    border: 2px solid #e8e8e8;
-    border-right-color: #333333;
-    border-bottom-color: #333333;
-    width: 1200px;
-    margin: 0 auto;
-    box-shadow: 0px 0px 0px 2px #101010;
+  background: #c9b3e8;
+  border: 2px solid #e8e8e8;
+  border-right-color: #333333;
+  border-bottom-color: #333333;
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 0px 2px #101010;
 }
 
 .titlebar {
-    background: linear-gradient(to bottom, #4a1e9f, #2a0e5d);
-    color: white;
-    padding: 4px 8px;
-    font-weight: bold;
-    font-family: "Pixel", monospace;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background: linear-gradient(to bottom, #4a1e9f, #2a0e5d);
+  color: white;
+  padding: 4px 8px;
+  font-weight: bold;
+  font-family: "Pixel", monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .titlebar .controls {
-    display: flex;
-    gap: 4px;
+  display: flex;
+  gap: 4px;
 }
 
 .titlebar button {
-    width: 16px;
-    height: 16px;
-    border: none;
-    background: #bca3db;
-    border-top: 2px solid #f5f5f5;
-    border-left: 2px solid #f5f5f5;
-    border-right: 2px solid #333333;
-    border-bottom: 2px solid #333333;
-    cursor: default;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background: #bca3db;
+  border-top: 2px solid #f5f5f5;
+  border-left: 2px solid #f5f5f5;
+  border-right: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  cursor: default;
 }
 
 .navbar {
-    background: linear-gradient(to bottom, #a982d8, #ad89e4);
-    padding: 6px;
-    border-top: 2px solid #f5f5f5;
-    border-left: 2px solid #f5f5f5;
-    border-right: 2px solid #333333;
-    border-bottom: 2px solid #333333;
-    font-family: "Pixel", monospace;
+  background: linear-gradient(to bottom, #a982d8, #ad89e4);
+  padding: 6px;
+  border-top: 2px solid #f5f5f5;
+  border-left: 2px solid #f5f5f5;
+  border-right: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  font-family: "Pixel", monospace;
 }
 
 .navbar a {
-    color: #1f1229;
-    font-weight: bold;
-    text-decoration: none;
-    margin-right: 12px;
+  color: #1f1229;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 12px;
 }
 
-.header-text {
-	margin: 0 24px;
-	display: inline-block;
-	width: 390px;
-	box-sizing: border-box;
+.main-text {
+  margin: 0 24px;
+  display: inline-block;
+  width: 390px;
+  box-sizing: border-box;
 }
 
 .title {
-	font-weight: 600;
-	color: #FFF;
-	font-size: 24px;
-	line-height: 32px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .subtitle {
-	margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
-
-.header {
-	min-height: 200px;
-	padding: 24px;
-	vertical-align: top;
+.main {
+  min-height: 200px;
+  padding: 24px;
+  vertical-align: top;
 }
 
 .content {
-    padding: 10px;
-    background: #d4c4ea;
-    color: #150e1b;
-    font-family: "Verdana";
-    border-top: 2px solid #f5f5f5;
-    border-left: 2px solid #f5f5f5;
-    border-right: 2px solid #333333;
-    border-bottom: 2px solid #333333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 10px;
+  background: #d4c4ea;
+  color: #150e1b;
+  font-family: "Verdana";
+  border-top: 2px solid #f5f5f5;
+  border-left: 2px solid #f5f5f5;
+  border-right: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer {
-    margin-top: 10px;
-    padding: 4px;
-    text-align: center;
-    font-size: 12px;
-    background: linear-gradient(to bottom, #ad89e4, #a982d8);
-    border-top: 2px solid #f5f5f5;
-    border-left: 2px solid #f5f5f5;
-    border-right: 2px solid #333333;
-    border-bottom: 2px solid #333333;
+  margin-top: 10px;
+  padding: 4px;
+  text-align: center;
+  font-size: 12px;
+  background: linear-gradient(to bottom, #ad89e4, #a982d8);
+  border-top: 2px solid #f5f5f5;
+  border-left: 2px solid #f5f5f5;
+  border-right: 2px solid #333333;
+  border-bottom: 2px solid #333333;
 }
 
 .footer a {
-    color: #d4c4ea;
-    font-weight: bold;
-    text-decoration: none;
-    margin-right: 12px;
+  color: #d4c4ea;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 12px;
 }
 
 .profile_pic {
-    width: 20%;
-    height: auto;
-    border-radius: 25%;
-    padding: 2%;
-    rotate: -4deg;
-    display: inline-block;
-	vertical-align: top;
+  width: 25%;
+  height: auto;
+  border-radius: 25%;
+  padding: 2%;
+  rotate: -6deg;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .username {
-    color: #28103a;
-    font-weight: bold;
-    font-family: "cubano";
-    margin-right: 12px;
+  color: #28103a;
+  font-weight: bold;
+  font-family: "cubano";
+  margin-right: 12px;
 }
 
 .subtitle {
-    color: #28103a;
-    font-weight: bold;
-    font-family: "Verdana";
-    margin-right: 12px;
+  color: #28103a;
+  font-weight: bold;
+  font-family: "cubano";
+  margin-right: 12px;
 }
 
 .profile_pic:hover {
-    animation: rock 0.6s;
+  animation: rock 0.6s;
 }
 
 @keyframes rock {
-    0% { transform: rotate(0deg); }
-    10% { transform: rotate(6deg); }
-    20% { transform: rotate(-6deg); }
-    30% { transform: rotate(0deg); }
-    40% { transform: rotate(3deg); }
-    50% { transform: rotate(-3deg); }
-    60% { transform: rotate(0deg); }
-    70% { transform: rotate(1deg); }
-    80% { transform: rotate(-1deg); }
-    90% { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(6deg);
+  }
+  20% {
+    transform: rotate(-6deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(1deg);
+  }
+  80% {
+    transform: rotate(-1deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
