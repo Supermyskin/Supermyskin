@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0a;
+    color: #d4d4d4;
+    font-family: 'Share Tech Mono', monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.terminal {
+    width: 100%;
+    max-width: 860px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.ascii-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    min-height: 120px;
+    position: relative;
+}
+
+.ascii-art {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 9.5px;
+    line-height: 1.15;
+    color: #f0f0f0;
+    white-space: pre;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.ascii-art.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.ascii-art.visible {
+    opacity: 1;
+}
+
+.prompt-block {
+    width: 100%;
+    max-width: 600px;
+    animation-delay: 0.3s;
+}
+
+.prompt-line {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5ch;
+    margin-bottom: 0.4rem;
+}
+
+.prompt-sym {
+    color: #888;
+    user-select: none;
+    flex-shrink: 0;
+}
+
+.prompt-user {
+    color: #c8c8c8;
+}
+
+.prompt-at {
+    color: #666;
+}
+
+.prompt-host {
+    color: #a0a0a0;
+}
+
+.prompt-path {
+    color: #888;
+}
+
+.prompt-cmd {
+    color: #f0f0f0;
+}
+
+.prompt-flag {
+    color: #aaa;
+}
+
+.output-line {
+    color: #888;
+}
+
+.output-link {
+    color: #c8c8c8;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+    transition: color 0.15s, border-color 0.15s;
+}
+
+.output-link:hover {
+    color: #fff;
+    border-color: #999;
+}
+
+.nav-block {
+    margin-top: 1.6rem;
+    border-top: 1px solid #222;
+    padding-top: 1.2rem;
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation-delay: 2.9s;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6ch;
+    text-decoration: none;
+    color: #777;
+    font-size: 13px;
+    transition: color 0.15s;
+}
+
+.nav-item:hover {
+    color: #e0e0e0;
+}
+
+.nav-item:hover .nav-arrow {
+    color: #aaa;
+}
+
+.nav-arrow {
+    color: #444;
+    transition: color 0.15s;
+}
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background: #d4d4d4;
+    vertical-align: middle;
+    margin-left: 2px;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
