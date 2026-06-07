@@ -30,11 +30,11 @@ function updateHeight() {
 
 function toggle() {
     if (showingDamian) {
-        damian.classList.remove('visible'); damian.classList.add('hidden');
-        handle.classList.remove('hidden'); handle.classList.add('visible');
+        damian.classList.remove('visible', 'animate-reveal'); damian.classList.add('hidden');
+        handle.classList.remove('hidden'); handle.classList.add('visible', 'animate-reveal');
     } else {
-        handle.classList.remove('visible'); handle.classList.add('hidden');
-        damian.classList.remove('hidden'); damian.classList.add('visible');
+        handle.classList.remove('visible', 'animate-reveal'); handle.classList.add('hidden');
+        damian.classList.remove('hidden'); damian.classList.add('visible', 'animate-reveal');
     }
     showingDamian = !showingDamian;
     setTimeout(updateHeight, 50);
