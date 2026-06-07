@@ -11,6 +11,18 @@ let drops = [];
 
 let showingDamian = true;
 
+function createDrop(columnHeight, startInView = false) {
+    return {
+        y: startInView
+            ? Math.random() * columnHeight
+            : Math.random() * -columnHeight,
+        speed: SPEED_MIN + Math.random() * (SPEED_MAX - SPEED_MIN),
+        length: 4 + Math.floor(Math.random() * 10),
+        chars: [],
+        pause: Math.floor(Math.random() * 120),
+    };
+}
+
 function updateHeight() {
     const active = showingDamian ? damian : handle;
     wrapper.style.height = active.offsetHeight + 'px';
@@ -32,13 +44,8 @@ function resize() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     const cols = Math.floor(canvas.width / FONT_SIZE);
-    drops = Array.from({ length: cols }, () => ({
-        y: Math.random() * -(canvas.height / FONT_SIZE),
-        speed: SPEED_MIN + Math.random() * (SPEED_MAX - SPEED_MIN),
-        length: 4 + Math.floor(Math.random() * 10),
-        chars: [],
-        active: Math.random() > 0.55,
-    }));
+    const rows = canvas.height / FONT_SIZE;
+    drops = Array.from({ length: cols }, () => createDrop(rows, true));
 }
 
 function draw() {
@@ -47,7 +54,11 @@ function draw() {
     ctx.font = `${FONT_SIZE}px "Share Tech Mono", monospace`;
     for (let i = 0; i < drops.length; i++) {
         const drop = drops[i];
-        if (!drop.active) continue;
+        if (drop.pause > 0) {
+            drop.pause--;
+            continue;
+        }
+
         const headY = Math.floor(drop.y);
         for (let t = 0; t < drop.length; t++) {
             const row = headY - t;
@@ -64,11 +75,7 @@ function draw() {
         }
         drop.y += drop.speed;
         if (drop.y * FONT_SIZE > canvas.height + drop.length * FONT_SIZE) {
-            drop.y = -drop.length - Math.random() * 30;
-            drop.speed = SPEED_MIN + Math.random() * (SPEED_MAX - SPEED_MIN);
-            drop.length = 4 + Math.floor(Math.random() * 10);
-            drop.chars = [];
-            drop.active = Math.random() > 0.4;
+            drops[i] = createDrop(canvas.height / FONT_SIZE);
         }
     }
 
